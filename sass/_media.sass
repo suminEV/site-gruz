@@ -1,0 +1,106 @@
+@import "vars"
+
+
+/*==========  Desktop First  ==========*/
+// Стили наследуются от большего экрана к меньшему
+
+//Extra large: ≥1200px
++media-breakpoint-down(xl)
+
+//Large: ≥992px
++media-breakpoint-down(lg)
+	.slide
+		.info-block
+			position: absolute
+			left: 50%
+			width: 700px
+			margin-left: -350px
+			bottom: 50px
+
+//Medium: ≥768px
++media-breakpoint-down(md)
+	.main-content
+		padding-top: 97px
+	.top-logo
+		text-align: center
+	.top-menu
+		nav
+			ul
+				text-align: center
+				padding: 0
+				li
+					border-bottom: 2px solid transparent
+	.services
+		i
+			display: none
+	.slick-prev
+		margin-left: 20px
+	.slick-next
+		margin-right: 20px
+	.slide
+		.info-block
+			position: absolute
+			left: 50%
+			width: 650px
+			margin-left: -325px
+			bottom: 50px
+	.slide
+		.contact-block
+			position: absolute
+			left: 50%
+			width: 650px
+			margin-left: -325px
+			margin-top: 100px
+	.hidden-on-mobyle
+		display: none
+
+//Small: ≥576px
++media-breakpoint-down(sm)
+	.main-content
+		padding-top: 57px
+	.desktop-menu,
+	.top-slider
+		display: none
+	.top-logo
+		text-align: left
+	.info-mobyle
+		h2
+			text-align: center
+	.modal-content
+		width: 100%
+	.close
+		top: 0
+		font-size: 35px
+
+//Extra small: >0
++media-breakpoint-down(xs)
+	.info-404
+		min-height: 400px
+
+/*==========  Mobile First  ==========*/
+// Стили наследуются от меньшего экрана к большему
+
+//Extra small: <576px
++media-breakpoint-up(xs)
+	.top-section
+		.top-menu
+			text-align: right
+
+//Small: ≤576px
++media-breakpoint-up(sm)
+	.top-menu
+		text-align: right
+
+//Medium: ≤768px
++media-breakpoint-up(md)
+	.info-mobyle,
+	.mobyle-button-menu
+		display: none
+
+//Large: ≤992px
++media-breakpoint-up(lg)
+	.hidden-on-desktop
+		display: none
+
+//Extra large: ≤1200px
++media-breakpoint-up(xl)

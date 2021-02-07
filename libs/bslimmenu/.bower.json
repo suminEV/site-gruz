@@ -1,0 +1,15 @@
+{
+  "name": "bslimmenu",
+  "homepage": "https://github.com/fembri/slimmenu",
+  "version": "0.1.0",
+  "_release": "0.1.0",
+  "_resolution": {
+    "type": "version",
+    "tag": "0.1.0",
+    "commit": "14eed61fb1e6aecb0adf3513ce82809db2660b45"
+  },
+  "_source": "https://github.com/fembri/slimmenu.git",
+  "_target": "^0.1.0",
+  "_originalSource": "bslimmenu",
+  "_direct": true
+}
